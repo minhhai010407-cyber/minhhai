@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cột trái */
+.left-side {
+    width: 35%;
+    background: linear-gradient(180deg, #1e3a56, #3a6a9e);
+    color: #fff;
+    padding: 30px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.profile h2 {
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.profile span {
+    font-size: 14px;
+    color: #b3c5d7;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section h3 {
+    font-size: 14px;
+    color: #00bcd4;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 4px;
+}
+
+.section p {
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #e0e6ed;
+    margin-bottom: 6px;
+}
+
+.skill {
+    margin-top: 10px;
+}
+
+.bar {
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    height: 6px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.level {
+    height: 6px;
+    border-radius: 4px;
+}
+
+.html { width: 90%; background: #00bcd4; }
+.css { width: 80%; background: #00bcd4; }
+.js { width: 70%; background: #00bcd4; }
+
+/* Cột phải */
+.right-side {
+    width: 65%;
+    padding: 40px;
+}
+
+.right-side h1 {
+    font-size: 28px;
+    color: #1e3a56;
+}
+
+.right-side h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.right-side .section {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.right-side .section:hover {
+    background: #f0f8ff;
+    border-left: 4px solid #00bcd4;
+    padding-left: 10px;
+}
+
+.right-side .section h3 {
+    color: #00bcd4;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.right-side p {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.right-side ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.right-side ul li {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.right-side ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+}
+
+/* Timeline cho Experience */
+.timeline-item {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background: #00bcd4;
+    border-radius: 50%;
+}
+
+.timeline-year {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
